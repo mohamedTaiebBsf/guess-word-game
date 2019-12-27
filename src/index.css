@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Girassol|Inria+Serif|Saira+Extra+Condensed|Vidaloka&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    background: #fbc445 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    font-family: "Girassol", cursive;
+    font-size: 80px;
+    font-style: oblique;
+}
+
+.content h4 {
+    margin-top: 20px;
+}
+
+.keyboard {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: "Vidaloka", serif;
+}
+
+.emoji {
+    -webkit-transform: rotate(45deg) perspective(0);
+    -moz-transform: rotate(45deg) perspective(0);
+    transform: rotate(45deg) perspective(0);
+}
+
+.keyboard button {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin: 1px;
+}
+
+.keyboard .used-fail {
+    color: #424242;
+    background: #ff3030;
+}
+
+.keyboard .used-success {
+    color: #424242;
+    background: #03fc17;
+}
+
+.word {
+    font-size: 50px;
+    font-family: "Inria Serif", serif;
+}
+
+.word span {
+    margin-right: 5px;
+}
+
+.win-style {
+    color: #098f28;
+}
+
+.lost-style {
+    color: #d40d0d;
+}
+
+.result {
+    font-size: 40px;
+    font-family: "Inria Serif", serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.start-btn {
+    font-family: "Saira Extra Condensed", sans-serif;
+    letter-spacing: 3px;
+    border: 5px double #13659c;
+    border-radius: 5px;
+    background: transparent;
+    width: 200px;
+    height: 80px;
+    font-size: 35px;
+    color: #13659c;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
