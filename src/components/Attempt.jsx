@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from 'react-redux';
 
 const Attempt = ({attempt, maxAttempt}) => {
     return (
@@ -9,4 +10,11 @@ const Attempt = ({attempt, maxAttempt}) => {
     );
 };
 
-export default Attempt;
+const mapStateToProps = state => {
+    return {
+        maxAttempt: state.red.maxAttempt,
+        attempt: state.red.attempt
+    };
+};
+
+export default connect(mapStateToProps)(Attempt);

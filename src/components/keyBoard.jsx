@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {connect} from 'react-redux';
+import {handleLetterClick} from '../actions/actions';
 
 class KeyBoard extends Component {
 
@@ -37,4 +39,18 @@ class KeyBoard extends Component {
     }
 }
 
-export default KeyBoard;
+const mapStateToProps = state => {
+    return {
+        alphabets: state.red.alphabets,
+        word: state.red.wordToSearch,
+        usedLetters: state.red.usedLetters
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        letterClick: (letter) => dispatch(handleLetterClick(letter))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(KeyBoard);
