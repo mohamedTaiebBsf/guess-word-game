@@ -1,0 +1,3 @@
+export const START_GAME = 'START_GAME';
+
+export const HANDLE_LETTER_CLICK = 'HANDLE_LETTER_CLICK';
