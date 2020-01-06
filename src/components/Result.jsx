@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from 'react-redux';
 
 const Result = ({status}) => {
     return (
@@ -16,4 +17,10 @@ const Result = ({status}) => {
     );
 };
 
-export default Result;
+const mapStateToProps = state => {
+    return {
+        status: state.red.status
+    };
+};
+
+export default connect(mapStateToProps)(Result);
