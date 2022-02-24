@@ -1,6 +1,5 @@
-# Hangman Game - React
-It is a react app that represents a simple hangman game.
-Demo: [http://mohamedTaiebBsf.github.io/HangmanGame-react](http://mohamedTaiebBsf.github.io/HangmanGame-react)
+# Guess Word Game
+> It is a react game for guessing a word.
 
 ## Instructions
 Game instructions:
