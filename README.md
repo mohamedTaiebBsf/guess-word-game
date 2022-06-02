@@ -1,5 +1,9 @@
 # Guess Word Game
-> It is a react game for guessing a word.
+> It is a react game for guessing a word built with React.js
+
+## Demo 🚀
+
+You can visualize the demo [here](https://gw-game.netlify.app/).
 
 ## Instructions
 Game instructions:
